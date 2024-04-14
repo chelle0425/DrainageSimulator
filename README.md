@@ -1,4 +1,4 @@
-# DrainageSim
+# DrainageSimulator
 ### Simulation of rainfall drainage patterns in a given terrain
 
 A simulation that takes terrain model data and simulates waterflow by tracking individual tain droplets, assuming an evenly distributed rainfall
