@@ -40,7 +40,7 @@ The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital te
 
 <img src="https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/terrainmodel_DTM50.png" width="200" />
 
-When running the code, make sure that at *line 14* your terrain model file (in this case `DTM50.txt`) is in the same folder as this code. As the code is written with the demo file in mind you don't need to make any changes.
+When running the code, make sure that your terrain model file (in this case `DTM50.txt`) is in the same folder as this code. As the code is written with the demo file in mind you don't need to make any changes.
 
 ### Output
 The program outputs an appropriately scaled image file in which areas of high flow are brighter than those of low flow. If a droplet is on a plateau, it simply doesn't flow anywhere thus bodies of still water (e.g. lakes) should appear as black bodies.
