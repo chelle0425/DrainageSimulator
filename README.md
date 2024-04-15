@@ -5,7 +5,7 @@ Simulation of rainfall drainage patterns in a given terrain
 
 ## About the Project
 
-A simulation that takes terrain model data and simulates waterflow by tracking individual tain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
+A simulation that takes terrain model data and simulates waterflow by tracking individual rain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
 
 For any n x m sized terrain, this program creates an array of "rain droplets" of the same dimension, iterates through every block and tracks each individual droplet flowing downhill
 
@@ -13,7 +13,7 @@ Droplets flows to the lowest adjacent square (including diagonals), choosing one
 
 The program outputs an appropriately scaled image file in which areas of high flow are brighter than those of low flow.
 
-Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 array DTM file)
+Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 DTM file)
 
 *Version 1.02*
 
@@ -40,7 +40,7 @@ The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital te
 
 <img src="https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/terrainmodel_DTM50.png" width="200" />
 
-When running the code, make sure that at *line 14* your terrain model file (in this case `DTM50.txt`) is in the same folder as this code. As the code is written with the demo file in mind you don't need to make any changes.
+When running the code, make sure that your terrain model file (in this case `DTM50.txt`) is in the same folder as this code. As the code is written with the demo file in mind you don't need to make any changes.
 
 ### Output
 The program outputs an appropriately scaled image file in which areas of high flow are brighter than those of low flow. If a droplet is on a plateau, it simply doesn't flow anywhere thus bodies of still water (e.g. lakes) should appear as black bodies.
@@ -48,13 +48,13 @@ The program outputs an appropriately scaled image file in which areas of high fl
 ![outputimage_DTM50.png](https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/outputimage_DTM50.png "outputimage_DTM50.png")
 
 ## Meta
-This project was submitted as part of the coursework to the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
+This project was submitted as part of coursework for the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
 
 This project may be freely copied and distributed provided the source is acknowledged explicitly.
 
 ### Acknowledgments 
 
-I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file DTM50.txt. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who not only helped fix crucial bugs but also provided helpful comments and feedback.
+I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file `DTM50.txt`. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who helped fix crucial bugs and provided helpful comments and feedback.
 
 *Version 1.02*
 
