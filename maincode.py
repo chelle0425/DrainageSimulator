@@ -13,7 +13,7 @@ from numpy import loadtxt
 
 terrain_array = loadtxt("DTM50.txt", dtype="float")
 # line from: https://www.statology.org/python-read-text-file-into-list/
-# make sure terrain model file (for demo- dtm50.txt) is in same file as this code
+# make sure terrain model file (for demo- dtm50.txt) is in same folder as this code
 
 
 # creating array simulating rainfall
