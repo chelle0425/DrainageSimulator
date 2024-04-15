@@ -32,7 +32,7 @@ Clone the repo
 
 The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital terrain model data (heights) at 50m intervals over a 10km x 10km square of hilly terrain in Scotland. The values are space-separated, in logical order and fixed such that there are no sink points (i.e. there are no squares which are lower than all surrounding squares). The data is visualised below as a greyscale image, where white is high and dark is low.
 
-![terrainmodel_DTM50](https://github.com/chelle0425/DrainageSimulator/blob/main/terrainmodel_DTM50.png "DTM50.txt visualisation")
+<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/terrainmodel_DTM50.png" width="200" />
 
 ## Meta
 This project was submitted as part of the coursework to the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
