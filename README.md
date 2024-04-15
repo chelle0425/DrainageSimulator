@@ -13,7 +13,7 @@ Droplets flows to the lowest adjacent square (including diagonals), choosing one
 
 The program outputs an appropriately scaled image file in which areas of high flow are brighter than those of low flow.
 
-Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 array DTM file)
+Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 DTM file)
 
 *Version 1.02*
 
