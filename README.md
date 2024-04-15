@@ -5,7 +5,7 @@ Simulation of rainfall drainage patterns in a given terrain
 
 ## About the Project
 
-A simulation that takes terrain model data and simulates waterflow by tracking individual tain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
+A simulation that takes terrain model data and simulates waterflow by tracking individual rain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
 
 For any n x m sized terrain, this program creates an array of "rain droplets" of the same dimension, iterates through every block and tracks each individual droplet flowing downhill
 
