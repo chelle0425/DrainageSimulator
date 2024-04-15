@@ -21,18 +21,18 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 Initialize the environment
-> test
+    test
 
 ### Installation
 
 Clone the repo
-> git clone https://github.com/chelle0425/DrainageSimulator.git
+    git clone https://github.com/chelle0425/DrainageSimulator.git
 
 ## Demo
 
-The demo Digital Terrain Model (DTM) data file **DTM50.txt** represents digital terrain model data (heights) at 50m intervals over a 10km x 10km square of hilly terrain in Scotland. The values are space-separated, in logical order and fixed such that there are no sink points (i.e. there are no squares which are lower than all surrounding squares). The data is visualised below as a greyscale image, where white is high and dark is low.
+The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital terrain model data (heights) at 50m intervals over a 10km x 10km square of hilly terrain in Scotland. The values are space-separated, in logical order and fixed such that there are no sink points (i.e. there are no squares which are lower than all surrounding squares). The data is visualised below as a greyscale image, where white is high and dark is low.
 
-
+![terrainmodel_DTM50](https://github.com/chelle0425/DrainageSimulator/blob/main/terrainmodel_DTM50.png "DTM50.txt visualisation")
 
 ## Meta
 This project was submitted as part of the coursework to the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
@@ -44,4 +44,4 @@ This project may be freely copied and distributed provided the source is acknowl
 I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file DTM50.txt. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who not only helped fix crucial bugs but also provided helpful comments and feedback.
 
 Version 1.02
-rochelle.pun@gmail.com, 2021
+<rochelle.pun@gmail.com>, 2021
