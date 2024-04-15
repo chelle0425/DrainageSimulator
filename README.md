@@ -1,6 +1,8 @@
 # DrainageSimulator
 Simulation of rainfall drainage patterns in a given terrain
 
+<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/outputimage_DTM50.png" width="500" />
+
 ## About the Project
 
 A simulation that takes terrain model data and simulates waterflow by tracking individual tain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
