@@ -1,7 +1,7 @@
 # DrainageSimulator
 Simulation of rainfall drainage patterns in a given terrain
 
-<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/outputimage_DTM50.png" width="500" />
+<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/demo/outputimage_DTM50.png" width="500" />
 
 ## About the Project
 
@@ -38,14 +38,14 @@ git clone https://github.com/chelle0425/DrainageSimulator.git
 
 The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital terrain model data (heights) at 50m intervals over a 10km x 10km square of hilly terrain in Scotland. The values are space-separated, in logical order and fixed such that there are no sink points (i.e. there are no squares which are lower than all surrounding squares). The data is visualised below as a greyscale image, where white is high and dark is low.
 
-<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/terrainmodel_DTM50.png" width="200" />
+<img src="https://github.com/chelle0425/DrainageSimulator/blob/main/demo/terrainmodel_DTM50.png" width="200" />
 
 When running the code, make sure that your terrain model file (in this case `DTM50.txt`) is in the same folder as this code. As the code is written with the demo file in mind you don't need to make any changes.
 
 ### Output
 The program outputs an appropriately scaled image file in which areas of high flow are brighter than those of low flow. If a droplet is on a plateau, it simply doesn't flow anywhere thus bodies of still water (e.g. lakes) should appear as black bodies.
 
-![outputimage_DTM50.png](https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/outputimage_DTM50.png "outputimage_DTM50.png")
+![outputimage_DTM50.png](https://github.com/chelle0425/DrainageSimulator/blob/main/demo/outputimage_DTM50.png "outputimage_DTM50.png")
 
 ## Meta
 This project was submitted as part of coursework for the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
