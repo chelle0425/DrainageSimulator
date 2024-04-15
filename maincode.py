@@ -3,19 +3,20 @@ import imageio as im
 import numpy as np
 from numpy import loadtxt
 
-# opening terrain data (heights)
-# 200 x 200, 50m intervals over 10 x 10 km space seperated and in logical order
+# opening terrain data
+# for demo terrain model file (DTM50.txt):
+# 200 x 200, with 50m intervals over 10 x 10 km space seperated and in logical order
 
 
-# opening terrain txt file and convert into array
+# opening terrain txt file and converting into array
 # each value represents a "block" at terrain height h
 
 terrain_array = loadtxt("DTM50.txt", dtype="float")
 # line from: https://www.statology.org/python-read-text-file-into-list/
-# make sure dtm50.txt is in same file as this code
+# make sure terrain model file (for demo- dtm50.txt) is in same file as this code
 
 
-# creating 200 x 200 array simulating rainfall
+# creating array simulating rainfall
 
 rain_array = np.ones(terrain_array.shape)
 # each "block" has 1 unit of rainfall (droplet)
@@ -27,7 +28,7 @@ rain_array = np.ones(terrain_array.shape)
 # the water flows towards the block with a lower height value
 
 
-# FUNCTION DUMPING
+# FUNCTIONS
 # function that tracks whether a neighbouring block is lower
 
 def compare_neighbours_3x3(j, i, h):
@@ -93,10 +94,8 @@ def is_block_at_edge(x, y):
 for (x, y), height in np.ndenumerate(terrain_array):
     # this gives the cords of block b and iterates over each block in array
     # line from https://codereview.stackexchange.com/questions/178603/compare-neighbors-in-array
-    # aint fixing that flake8 above
 
     block = (x, y)
-    # for easy looping
 
     tracking_array = np.zeros(terrain_array.shape)
     # anti-loop 1: this tracks whether the rain droplet has been in the block
@@ -106,7 +105,6 @@ for (x, y), height in np.ndenumerate(terrain_array):
     # anti-loop 2: this tracks by coords
 
     is_block_at_edge_Fn = is_block_at_edge(block[0], block[1])
-    # quick way to let me alter the looping condition independently
 
     while is_block_at_edge_Fn is False:
         # while droplet isnt at an edge block
@@ -123,7 +121,6 @@ for (x, y), height in np.ndenumerate(terrain_array):
             if is_this_block_lower == True:
                 lower_blocks_list.append((column, row))
                 # adds all neighbouring blocks that are lower to list
-                # not using shorthand
 
         if len(lower_blocks_list) != 0:
             # if there IS a block that is lower..
@@ -150,7 +147,7 @@ for (x, y), height in np.ndenumerate(terrain_array):
                 # adds 1 to neighbouring block to simulate water gain
 
                 block = droplet_block
-                # changes droplet block to bxlock and loops
+                # changes droplet block to block and loops
 
                 is_block_at_edge_Fn = is_block_at_edge(block[0], block[1])
                 # checking if block is an edge block
@@ -173,13 +170,11 @@ for (x, y), height in np.ndenumerate(terrain_array):
 # output time!!
 
 output_array = np.log10(rain_array)
-# should in theory scale lower numbers more
-# log scaling-- it looked the best out of the ones ive tried
+# log scaling-- best fitted for presenting environmental problems like these
 
 output_array = 255 * (output_array / np.amax(output_array))
 # expresses everything as fractions and rescales everything to 0-255
 
-# this looks sick
 
 im.imwrite("outputimage_Rochelle.png", (output_array).astype(np.uint8))
 # .astype(np.uint8) gets rid of the lossy conversion warning
