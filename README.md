@@ -7,7 +7,7 @@ For any n x m sized terrain, this program creates an array of "rain droplets" of
 
 Droplets flows to the lowest adjacent square (including diagonals), choosing one at random if there are multiple directions that are lower
 
-If a droplet is on a plateau, it simply doesn't flow anywhere (lakes should appear as black bodies)
+If a droplet is on a plateau, it simply doesn't flow anywhere (thus lakes should appear as black bodies)
 
 Code takes about 1 min 30 to run for a 200x200 array
 
