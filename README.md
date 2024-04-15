@@ -48,13 +48,13 @@ The program outputs an appropriately scaled image file in which areas of high fl
 ![outputimage_DTM50.png](https://github.com/chelle0425/DrainageSimulator/blob/main/Demo/outputimage_DTM50.png "outputimage_DTM50.png")
 
 ## Meta
-This project was submitted as part of the coursework to the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
+This project was submitted as part of coursework for the first-year module "Programming for Geoscientists" in the Department of Earth Science and Engineering at Imperial College London.
 
 This project may be freely copied and distributed provided the source is acknowledged explicitly.
 
 ### Acknowledgments 
 
-I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file DTM50.txt. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who not only helped fix crucial bugs but also provided helpful comments and feedback.
+I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file `DTM50.txt`. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who helped fix crucial bugs and provided helpful comments and feedback.
 
 *Version 1.02*
 
