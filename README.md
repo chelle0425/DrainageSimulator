@@ -30,7 +30,7 @@ git clone https://github.com/chelle0425/DrainageSimulator.git
 Initialize the environment
 ```
 conda env create -f drainage-sim-env
-conda activate drainage-sim-env
+conda activate environment.yml
 ```
 
 Before running `maincode.py`, check that your terrain model file (for demo- `dtm50.txt`) is in the same folder as this repo. Additionally, please edit *Line 14* to reflect the name of your DTM file.
