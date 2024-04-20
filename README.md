@@ -3,6 +3,16 @@ Simulation of rainfall drainage patterns in a given terrain
 
 <img src="https://github.com/chelle0425/DrainageSimulator/blob/main/demo/outputimage_DTM50.png" width="500" />
 
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Demo](#demo)
+  - [Output](#output)
+- [Meta](#meta)
+  - [Acknowledgments](#acknowledgments)
+  
 ## About the Project
 
 A simulation that takes terrain model data and simulates waterflow by tracking individual rain droplets, assuming an evenly distributed rainfall. This simulation is multi-variable dependant and to first-order representative of real-life drainage basins.
@@ -16,16 +26,6 @@ The program outputs an appropriately scaled image file in which areas of high fl
 Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 DTM file)
 
 *Version 1.02*
-
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Demo](#demo)
-  - [Output](#output)
-- [Meta](#meta)
-  - [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
