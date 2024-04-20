@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 Initialize the environment
 ```
-conda env create -f environment.yml
+conda env create -f drainage-sim-env
 conda activate environment.yml
 ```
 
