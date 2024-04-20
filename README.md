@@ -35,6 +35,12 @@ Clone the repo
 git clone https://github.com/chelle0425/DrainageSimulator.git
 ```
 
+Before running `maincode.py`, check that your terrain model file (for demo- `dtm50.txt`) is in the same folder as this repository. Additionally, please edit *Line 14* to reflect the name of your DTM file.
+
+```
+terrain_array = loadtxt("<yourDTMmodelfile.txt>", dtype="float")
+```
+
 ## Demo
 
 The demo Digital Terrain Model (DTM) data file `DTM50.txt` represents digital terrain model data (heights) at 50m intervals over a 10km x 10km square of hilly terrain in Scotland. The values are space-separated, in logical order and fixed such that there are no sink points (i.e. there are no squares which are lower than all surrounding squares). The data is visualised below as a greyscale image, where white is high and dark is low.
