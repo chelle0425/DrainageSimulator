@@ -20,22 +20,20 @@ Code takes about 1 min 30 to run for the demo file `DTM50.txt` (a 200x200 DTM fi
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-Initialize the environment
-```
-conda env create -f drainage-sim-env
-conda activate environment.yml
-```
-
-### Installation
+### Prerequisites and Installation
 
 Clone the repo
 ```
 git clone https://github.com/chelle0425/DrainageSimulator.git
 ```
 
-Before running `maincode.py`, check that your terrain model file (for demo- `dtm50.txt`) is in the same folder as this repository. Additionally, please edit *Line 14* to reflect the name of your DTM file.
+Initialize the environment
+```
+conda env create -f drainage-sim-env
+conda activate drainage-sim-env
+```
+
+Before running `maincode.py`, check that your terrain model file (for demo- `dtm50.txt`) is in the same folder as this repo. Additionally, please edit *Line 14* to reflect the name of your DTM file.
 
 ```
 terrain_array = loadtxt("<yourDTMmodelfile.txt>", dtype="float")
