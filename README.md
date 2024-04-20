@@ -24,7 +24,8 @@ To get a local copy up and running follow these simple example steps.
 
 Initialize the environment
 ```
-test
+conda env create -f environment.yml
+conda activate <env-name i forgor>
 ```
 
 ### Installation
