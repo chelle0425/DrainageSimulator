@@ -11,7 +11,7 @@ from numpy import loadtxt
 # opening terrain txt file and converting into array
 # each value represents a "block" at terrain height h
 
-terrain_array = loadtxt("DTM50.txt", dtype="float")
+terrain_array = loadtxt("demo/DTM50.txt", dtype="float")
 # line from: https://www.statology.org/python-read-text-file-into-list/
 # make sure terrain model file (for demo- dtm50.txt) is in same folder as this code
 
