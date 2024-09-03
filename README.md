@@ -83,6 +83,6 @@ This project may be freely copied and distributed provided the source is acknowl
 
 I would like to thank the Department of Earth Science and Engineering at Imperial College London for providing us with the project requirements and the demo DTM file `DTM50.txt`. Additionally, this project benefited from insightful discussions with Dr Mark Sutton from the department, who helped fix crucial bugs and provided helpful comments and feedback.
 
-*Version 1.02*
+*Version 1.1.2*
 
 <rochelle.pun@gmail.com>, 2021
